@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+logging:
+  level:
+    root: info
+    top.test.log.controller: debug
+  file:
+    path: /Users/zzy/Desktop/logs
+    name: /Users/zzy/Desktop/logs/spring-boot-logs.log
+  pattern:
+    console: '%red(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger : %msg%n'
